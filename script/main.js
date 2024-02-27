@@ -302,5 +302,15 @@ const animationTimeline = () => {
   });
 };
 
+//Begin button click listener.
+
+const beginbtn = document.getElementByClassName("btn");
+beginbtn.addEventListener("click", () => {
+  document.getElementsByClassName('begin').style.visibility='hidden';
+    fetchData();
+  });
+
+
+
 // Run fetch and animation in sequence
-fetchData();
+//fetchData();
