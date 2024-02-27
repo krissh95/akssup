@@ -307,6 +307,7 @@ const animationTimeline = () => {
 const beginbtn = document.getElementByClassName("btn");
 beginbtn.addEventListener("click", () => {
   document.getElementsByClassName('begin').style.visibility='hidden';
+  document.getElementById("bgaudio").play();
     fetchData();
   });
 
