@@ -306,7 +306,7 @@ const animationTimeline = () => {
 
 const beginbtn = document.getElementByClassName("btn");
 beginbtn.addEventListener("click", () => {
-  document.getElementById('begin').style.display='none';
+  document.getElementByClassName('begin').style.display='none';
   document.getElementByClassName("bgaudio").play();
   //tl.restart();
     fetchData();
