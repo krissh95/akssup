@@ -304,10 +304,10 @@ const animationTimeline = () => {
 
 //Begin button click listener.
 
-const beginbtn = document.getElementById("btn");
+const beginbtn = document.getElementByClassName("btn");
 beginbtn.addEventListener("click", () => {
-  document.getElementsById('begin').style.display='none';
-  document.getElementById("bgaudio").play();
+  document.getElementById('begin').style.display='none';
+  document.getElementByClassName("bgaudio").play();
   //tl.restart();
     fetchData();
   });
