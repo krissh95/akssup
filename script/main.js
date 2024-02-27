@@ -305,8 +305,8 @@ const animationTimeline = () => {
 beginall() {
   document.getElementByClassName('begin').style.visibility = 'hidden';
   document.getElementByClassName("bgaudio").play();
-  //tl.restart();
-  fetchData();
+  tl.restart();
+  //fetchData();
 }
 
 //Begin button click listener.
@@ -318,4 +318,4 @@ beginbtn.addEventListener("click", () => {
 
 
 // Run fetch and animation in sequence
-//fetchData();
+fetchData();
