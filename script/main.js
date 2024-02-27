@@ -304,14 +304,16 @@ const animationTimeline = () => {
 
 //Begin button click listener.
 
-const beginbtn = document.getElementByClassName("btn");
+const beginbtn = document.getElementById("btn");
 beginbtn.addEventListener("click", () => {
-  document.getElementsByClassName('begin').style.visibility='hidden';
+  document.getElementsById('begin').style.visibility='hidden';
+  document.getElementsById('btn').style.visibility='hidden';
   document.getElementById("bgaudio").play();
-    fetchData();
+  tl.restart();
+    //fetchData();
   });
 
 
 
 // Run fetch and animation in sequence
-//fetchData();
+fetchData();
