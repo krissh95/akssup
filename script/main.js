@@ -302,14 +302,17 @@ const animationTimeline = () => {
   });
 };
 
-//Begin button click listener.
-
-const beginbtn = document.getElementByClassName("btn");
-beginbtn.addEventListener("click", () => {
+beginall() {
   document.getElementByClassName('begin').style.visibility = 'hidden';
   document.getElementByClassName("bgaudio").play();
   //tl.restart();
-    fetchData();
+  fetchData();
+}
+
+//Begin button click listener.
+const beginbtn = document.getElementByClassName("btn");
+beginbtn.addEventListener("click", () => {
+  beginall();
   });
 
 
