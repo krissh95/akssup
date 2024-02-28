@@ -272,7 +272,7 @@ const animationTimeline = () => {
         visibility: "visible",
         opacity: 0,
         scale: 80,
-        repeat: 3,
+        repeat: 1,
         repeatDelay: 1.4
       },
       0.3
@@ -293,7 +293,7 @@ const animationTimeline = () => {
     );
 
   // tl.seek("currentStep");
-   tl.timeScale(4);
+   tl.timeScale(0.5);
 
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");
