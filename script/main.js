@@ -311,7 +311,7 @@ function beginall() {
 }
 
 //Begin button click listener.
-const beginbtn = document.getElementByClassName("btn");
+const beginbtn = document.getElementsByClassName("btn");
 beginbtn.addEventListener("click", () => {
   beginall();
   });
