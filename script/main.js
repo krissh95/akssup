@@ -311,7 +311,7 @@ function beginall() {
 }
 
 //Begin button click listener.
-document.getElementByClassName("btn").addEventListener("click", beginall);
+document.getElementsByClassName("btn")[0].addEventListener("click", beginall);
 
 
 // Run fetch and animation in sequence
