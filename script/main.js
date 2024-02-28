@@ -305,7 +305,7 @@ const animationTimeline = () => {
 beginall() {
   document.getElementByClassName('begin').style.display = 'none';
   document.getElementByClassName("bgaudio").play();
-  tl.restart();
+  //tl.restart();
   //fetchData();
 }
 
