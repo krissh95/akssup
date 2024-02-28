@@ -307,6 +307,7 @@ function beginall() {
   document.getElementsByClassName("bgaudio")[0].play();
   //document.getElementByClassName('btn').style.display = 'none';
   //tl.restart();
+  tl.timeScale(4);
   fetchData();
 }
 
