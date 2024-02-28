@@ -293,7 +293,7 @@ const animationTimeline = () => {
     );
 
   // tl.seek("currentStep");
-  // tl.timeScale(2);
+   tl.timeScale(4);
 
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");
@@ -307,7 +307,6 @@ function beginall() {
   document.getElementsByClassName("bgaudio")[0].play();
   //document.getElementByClassName('btn').style.display = 'none';
   //tl.restart();
-  tl.timeScale(4);
   fetchData();
 }
 
