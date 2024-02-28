@@ -303,8 +303,8 @@ const animationTimeline = () => {
 };
 
 function beginall() {
-  document.getElementByClassName('begin').style.display = 'none';
-  document.getElementByClassName("bgaudio").play();
+  document.getElementsByClassName('begin')[0].style.display = 'none';
+  document.getElementsByClassName("bgaudio")[0].play();
   //document.getElementByClassName('btn').style.display = 'none';
   //tl.restart();
   fetchData();
