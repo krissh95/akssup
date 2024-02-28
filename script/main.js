@@ -303,7 +303,7 @@ const animationTimeline = () => {
 };
 
 beginall() {
-  document.getElementByClassName('begin').style.visibility = 'hidden';
+  document.getElementByClassName('begin').style.display = 'none';
   document.getElementByClassName("bgaudio").play();
   tl.restart();
   //fetchData();
