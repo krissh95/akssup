@@ -302,12 +302,12 @@ const animationTimeline = () => {
   });
 };
 
-beginall() {
-  //document.getElementByClassName('begin').style.display = 'none';
+function beginall() {
+  document.getElementByClassName('begin').style.display = 'none';
   document.getElementByClassName("bgaudio").play();
-  document.getElementByClassName('btn').style.display = 'none';
+  //document.getElementByClassName('btn').style.display = 'none';
   //tl.restart();
-  //fetchData();
+  fetchData();
 }
 
 //Begin button click listener.
@@ -319,4 +319,4 @@ beginbtn.addEventListener("click", () => {
 
 
 // Run fetch and animation in sequence
-fetchData();
+//fetchData();
